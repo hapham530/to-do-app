@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Todoリスト管理アプリ</p>
+        <p className="Todo-title">Todoリスト管理アプリ</p>
           {/* <NewComponents/> */}
           <ListTodos/>
       </header>

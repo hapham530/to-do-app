@@ -22,11 +22,14 @@
 }
 
 .App-header {
-  background-color: #216683;
+  background-color: #03222f;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 40px 0 0;
+  .Todo-title {
+    font-size: 1.5em;
+  }
   .con-todos {
     .list-todos {
       max-width: 500px;
@@ -44,6 +47,9 @@
         justify-content: space-between;
         >span {
           min-width: 70%;
+          @media screen and (max-width: 767px) {
+            min-width: 50%;
+          }
         }
       }
     }
