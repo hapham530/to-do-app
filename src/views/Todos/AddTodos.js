@@ -12,7 +12,7 @@ class AddTodos extends React.Component {
     }
     handleAddTodos = () => {
         if(!this.state.title) {
-            alert('missing required information')
+            alert('Todoの内容を入力ください。')
             return
         }
     let todo = {
@@ -30,7 +30,7 @@ class AddTodos extends React.Component {
         return(
             <div className="add-todos">
                 <input type="text" value={title} onChange={(event) => this.handleOnChange(event)}/>
-                <button type="button" onClick={() => this.handleAddTodos()}>Add</button>
+                <button type="button" onClick={() => this.handleAddTodos()}>追加</button>
             </div>
         )
     }

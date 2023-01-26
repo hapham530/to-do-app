@@ -5,9 +5,9 @@ import { toast } from 'react-toastify';
 class ListTodos extends React.Component {
     state = {
         listTodos : [
-            {id:'123', title:'doing homework'},
-            {id:'122', title:'doing chores'},
-            {id:'121', title:'learning new language'}
+            {id:'123', title:'運動'},
+            {id:'122', title:'洗濯'},
+            {id:'121', title:'買い物'}
         ],
         editTodo: {}
     }
@@ -89,9 +89,9 @@ class ListTodos extends React.Component {
                                     </>
                                     }
                                     <button className="btn-edit" onClick={() => this.handleEditTodo(item)}>
-                                        {checkObjEmpty === false && item.id === editTodo.id ? 'Save' : 'Edit'}
+                                        {checkObjEmpty === false && item.id === editTodo.id ? '保存' : '編集'}
                                     </button>
-                                    <button className="btn-delete" onClick={() => this.handledeleteTodos(item)}>Delete</button>
+                                    <button className="btn-delete" onClick={() => this.handledeleteTodos(item)}>削除</button>
                                 </div>
                                 )
                             })
